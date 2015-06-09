@@ -1,0 +1,16 @@
+Package: hues
+Type: Package
+Title: hues
+Version: 0.0.1.9000
+Date: 2014-11-26
+Depends: R (>= 3.2.0)
+Imports: colorspace
+Authors@R: person("John", "Baumgartner", email = "johnbaums@gmail.com",
+                  role = c("aut", "cre"))
+URL: https://github.com/johnbaums/hues
+BugReports: https://github.com/johnbaums/hues/issues
+Description:  Generate colour palettes by k-means clustering of LAB colour 
+    space. Based on iwanthue (http://tools.medialab.sciences-po.fr/iwanthue/; 
+    https://github.com/medialab/iwanthue).
+License: GPL-3
+LazyData: yes
