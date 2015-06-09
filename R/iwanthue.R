@@ -40,6 +40,12 @@
 #' @examples 
 #' iwanthue(5)
 #' iwanthue(5, plot=TRUE)
+#' iwanthue(5, 0, 240, 0, 24, 0, 100, plot=TRUE) # shades
+#' iwanthue(5, 0, 360, 0, 54, 67, 100, plot=TRUE) # pastel
+#' iwanthue(5, 0, 360, 54, 180, 27, 67, plot=TRUE) # pimp
+#' iwanthue(5, 0, 360, 36, 180, 13, 73, plot=TRUE) #intense
+#' iwanthue(3, 0, 300, 60, 180, 73, 100, plot=TRUE) # fluoro
+#' iwanthue(3, 220, 260, 12, 150, 0, 53, plot=TRUE) # blue ocean
 iwanthue <- function(n, hmin=0, hmax=360, cmin=0, cmax=180, lmin=0, lmax=100, 
                      plot=FALSE, random=FALSE) {
   stopifnot(hmin >= 0, cmin >= 0, lmin >= 0, 
