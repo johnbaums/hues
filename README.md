@@ -15,46 +15,46 @@ library(hues)
 iwanthue(5, plot=TRUE)
 ```
 
-![](man/figures/figex-1.png)
+![](README-ex-1.png)
 
-    #>         1         2         3         4         5 
-    #> "#503F44" "#97B2B7" "#C6624D" "#94BF58" "#964FB8"
+    ##         1         2         3         4         5 
+    ## "#503F44" "#97B2B7" "#C6624D" "#94BF58" "#964FB8"
     iwanthue(5, 0, 240, 0, 24, 0, 100, plot=TRUE)    # shades
 
-![](man/figures/figex-2.png)
+![](README-ex-2.png)
 
-    #>         1         2         3         4         5 
-    #> "#7A8177" "#C5CEC3" "#423122" "#020202" "#2D4438"
+    ##         1         2         3         4         5 
+    ## "#7A8177" "#C5CEC3" "#423122" "#020202" "#2D4438"
     iwanthue(5, 0, 360, 0, 54, 67, 100, plot=TRUE)   # pastel
 
-![](man/figures/figex-3.png)
+![](README-ex-3.png)
 
-    #>         1         2         3         4         5 
-    #> "#D2B1D8" "#DCB9AB" "#8CD6B6" "#C7CE98" "#A3CFD8"
+    ##         1         2         3         4         5 
+    ## "#D2B1D8" "#DCB9AB" "#8CD6B6" "#C7CE98" "#A3CFD8"
     iwanthue(5, 0, 360, 54, 180, 27, 67, plot=TRUE)  # pimp
 
-![](man/figures/figex-4.png)
+![](README-ex-4.png)
 
-    #>         1         2         3         4         5 
-    #> "#9A40D2" "#C84784" "#C55A37" "#6A9C36" "#6B6FC7"
+    ##         1         2         3         4         5 
+    ## "#9A40D2" "#C84784" "#C55A37" "#6A9C36" "#6B6FC7"
     iwanthue(5, 0, 360, 36, 180, 13, 73, plot=TRUE)  # intense
 
-![](man/figures/figex-5.png)
+![](README-ex-5.png)
 
-    #>         1         2         3         4         5 
-    #> "#6977B8" "#BA4C7E" "#6E9A48" "#BD623A" "#8E41C6"
+    ##         1         2         3         4         5 
+    ## "#6977B8" "#BA4C7E" "#6E9A48" "#BD623A" "#8E41C6"
     iwanthue(3, 0, 300, 60, 180, 73, 100, plot=TRUE) # fluoro
 
-![](man/figures/figex-6.png)
+![](README-ex-6.png)
 
-    #>         1         2         3 
-    #> "#E3CF56" "#68DCD5" "#87E663"
+    ##         1         2         3 
+    ## "#E3CF56" "#68DCD5" "#87E663"
     iwanthue(3, 220, 260, 12, 150, 0, 53, plot=TRUE) # blue ocean
 
-![](man/figures/figex-7.png)
+![](README-ex-7.png)
 
-    #>         1         2         3 
-    #> "#3664BC" "#456D92" "#233C5D"
+    ##         1         2         3 
+    ## "#3664BC" "#456D92" "#233C5D"
 
 ### Installation
 
