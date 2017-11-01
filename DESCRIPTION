@@ -2,9 +2,11 @@ Package: hues
 Type: Package
 Title: hues
 Version: 0.0.1.9000
-Date: 2014-11-26
+Date: 2017-11-01
 Depends: R (>= 3.2.0)
-Imports: colorspace
+Imports: 
+  colorspace,
+  methods
 Authors@R: person("John", "Baumgartner", email = "johnbaums@gmail.com",
                   role = c("aut", "cre"))
 URL: https://github.com/johnbaums/hues

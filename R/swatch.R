@@ -11,6 +11,7 @@
 #' @return \code{NULL}. The colour swatch is plotted to the active plotting 
 #'   device.
 #' @seealso \code{\link{iwanthue}}
+#' @importFrom graphics barplot par strwidth
 #' @export
 #' @examples 
 #' swatch(colours()[1:10])
