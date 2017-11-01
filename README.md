@@ -24,40 +24,40 @@ library(hues)
 iwanthue(5, plot=TRUE)
 ```
 
-![](README-ex-1.png)
+![](README_files/ex-1.png)
 
 ``` r
 iwanthue(5, 0, 240, 0, 24, 0, 100, plot=TRUE)    # shades
 ```
 
-![](README-ex-2.png)
+![](README_files/ex-2.png)
 
 ``` r
 iwanthue(5, 0, 360, 0, 54, 67, 100, plot=TRUE)   # pastel
 ```
 
-![](README-ex-3.png)
+![](README_files/ex-3.png)
 
 ``` r
 iwanthue(5, 0, 360, 54, 180, 27, 67, plot=TRUE)  # pimp
 ```
 
-![](README-ex-4.png)
+![](README_files/ex-4.png)
 
 ``` r
 iwanthue(5, 0, 360, 36, 180, 13, 73, plot=TRUE)  # intense
 ```
 
-![](README-ex-5.png)
+![](README_files/ex-5.png)
 
 ``` r
 iwanthue(3, 0, 300, 60, 180, 73, 100, plot=TRUE) # fluoro
 ```
 
-![](README-ex-6.png)
+![](README_files/ex-6.png)
 
 ``` r
 iwanthue(3, 220, 260, 12, 150, 0, 53, plot=TRUE) # blue ocean
 ```
 
-![](README-ex-7.png)
+![](README_files/ex-7.png)
