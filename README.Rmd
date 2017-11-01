@@ -2,7 +2,6 @@
 output:
   md_document:
     variant: markdown_github
-    highlight: kate
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -35,7 +34,7 @@ devtools::install_github('johnbaums/hues')
 
 The examples below show palettes corresponding to some presets given at the [iwanthue](http://tools.medialab.sciences-po.fr/iwanthue) website.
 
-```{r ex, dev='CairoPNG', results='hide'}
+```{r ex, dev='CairoPNG', results='hide', fig.width=3}
 library(hues)
 iwanthue(5, plot=TRUE)
 iwanthue(5, 0, 240, 0, 24, 0, 100, plot=TRUE)    # shades
