@@ -17,6 +17,6 @@ Authors@R: person("John", "Baumgartner", email = "johnbaums@gmail.com",
                   role = c("aut", "cre"))
 URL: https://github.com/johnbaums/hues
 BugReports: https://github.com/johnbaums/hues/issues
-License: GPL-3
+License: LGPL (>= 3)
 LazyData: true
 RoxygenNote: 6.0.1
