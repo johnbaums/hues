@@ -1,8 +1,9 @@
 Package: hues
 Type: Package
-Version: 0.1.0.9000
-Title: hues
-Description: This package generates and plot palettes of optimally 
+Version: 0.1
+Title: Distinct Colours Palettes Based on 'iwanthue'
+Description: Creating effective colour palettes for figures is 
+    challenging. This package generates and plot palettes of optimally 
     distinct colours in perceptually uniform colour space, based on 
     'iwanthue' <http://tools.medialab.sciences-po.fr/iwanthue/>. 
     This is done through k-means clustering of CIE Lab colour space, 
