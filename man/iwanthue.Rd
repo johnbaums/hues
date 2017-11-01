@@ -2,7 +2,7 @@
 % Please edit documentation in R/iwanthue.R
 \name{iwanthue}
 \alias{iwanthue}
-\title{Generate a colour palette by k-means clustering of LAB colour space.}
+\title{Generate a colour palette by k-means clustering of CIE Lab colour space.}
 \usage{
 iwanthue(n, hmin = 0, hmax = 360, cmin = 0, cmax = 180, lmin = 0,
   lmax = 100, plot = FALSE, random = FALSE)
@@ -38,12 +38,12 @@ state.}
 }
 \value{
 A vector of \code{n} colours (as hexadecimal strings), representing 
-  centers of clusters determined through k-means clustering of the LAB colour
-  space delimited by \code{hmin}, \code{hmax}, \code{cmin}, \code{cmax}, 
-  \code{lmin} and \code{lmax}.
+  centers of clusters determined through k-means clustering of the CIE Lab 
+  colour space delimited by \code{hmin}, \code{hmax}, \code{cmin}, 
+  \code{cmax}, \code{lmin} and \code{lmax}.
 }
 \description{
-Generate a palette of distinct colours through k-means clustering of LAB 
+Generate a palette of distinct colours through k-means clustering of CIE Lab 
 colour space.
 }
 \details{

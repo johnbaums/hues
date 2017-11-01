@@ -1,6 +1,6 @@
-#' Generate a colour palette by k-means clustering of LAB colour space.
+#' Generate a colour palette by k-means clustering of CIE Lab colour space.
 #' 
-#' Generate a palette of distinct colours through k-means clustering of LAB 
+#' Generate a palette of distinct colours through k-means clustering of CIE Lab 
 #' colour space.
 #' 
 #' @param n Numeric. The number of colours to generate.
@@ -23,9 +23,9 @@
 #'   clustering, and on exit, the function will restore the pre-existing RNG 
 #'   state.
 #' @return A vector of \code{n} colours (as hexadecimal strings), representing 
-#'   centers of clusters determined through k-means clustering of the LAB colour
-#'   space delimited by \code{hmin}, \code{hmax}, \code{cmin}, \code{cmax}, 
-#'   \code{lmin} and \code{lmax}.
+#'   centers of clusters determined through k-means clustering of the CIE Lab 
+#'   colour space delimited by \code{hmin}, \code{hmax}, \code{cmin}, 
+#'   \code{cmax}, \code{lmin} and \code{lmax}.
 #' @details Note that \code{iwanthue} currently doesn't support \code{hmin} 
 #'   greater than \code{hmax} (which should be allowed, since hue is circular).
 #' @references 
