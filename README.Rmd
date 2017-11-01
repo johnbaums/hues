@@ -11,7 +11,7 @@ output:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "##",
-  fig.path = "README_files/"
+  fig.path = "man/figures/"
 )
 ```
 
