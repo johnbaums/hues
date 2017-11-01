@@ -1,7 +1,13 @@
 Package: hues
 Type: Package
+Version: 0.1.0.9000
 Title: hues
-Version: 0.0.1.9000
+Description: This package generates and plot palettes of optimally 
+    distinct colours in perceptually uniform colour space, based on 
+    'iwanthue' <http://tools.medialab.sciences-po.fr/iwanthue/>. 
+    This is done through k-means clustering of CIE Lab colour space, 
+    according to user-selected constraints on hue, chroma, and 
+    lightness.
 Date: 2017-11-01
 Depends: R (>= 3.2.0)
 Imports: 
@@ -11,8 +17,6 @@ Authors@R: person("John", "Baumgartner", email = "johnbaums@gmail.com",
                   role = c("aut", "cre"))
 URL: https://github.com/johnbaums/hues
 BugReports: https://github.com/johnbaums/hues/issues
-Description:  Generate colour palettes by k-means clustering of LAB colour 
-    space. Based on iwanthue (http://tools.medialab.sciences-po.fr/iwanthue/; 
-    https://github.com/medialab/iwanthue).
 License: GPL-3
-LazyData: yes
+LazyData: true
+RoxygenNote: 6.0.1
