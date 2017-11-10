@@ -2,7 +2,7 @@
 hues
 ====
 
-[![Travis-CI Build Status](https://travis-ci.org/johnbaums/hues.svg?branch=master)](https://travis-ci.org/johnbaums/hues)
+[![Travis-CI Build Status](https://travis-ci.org/johnbaums/hues.svg?branch=master)](https://travis-ci.org/johnbaums/hues) [![CRAN](http://www.r-pkg.org/badges/version/hues)](https://cran.r-project.org/package=hues)
 
 This package generates and plot palettes of optimally distinct colours in perceptually uniform colour space, based on [iwanthue](http://tools.medialab.sciences-po.fr/iwanthue/). This is done through k-means clustering of CIE Lab colour space, according to user-selected constraints on hue, chroma, and lightness.
 
