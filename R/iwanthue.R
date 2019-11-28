@@ -79,5 +79,5 @@ iwanthue <- function(n, hmin=0, hmax=360, cmin=0, cmax=180, lmin=0, lmax=100,
   if (isTRUE(plot)) {
     swatch(colorspace::hex(colorspace::LAB(clus$centers)))
   }
-  colorspace::hex(colorspace::LAB(clus$centers))
+  unname(colorspace::hex(colorspace::LAB(clus$centers)))
 }
