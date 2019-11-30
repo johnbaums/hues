@@ -1,5 +1,5 @@
 
-# hues 0.2.0 (UNRELEASED)
+# hues 0.2.0
 
 * `hues` now provides direct support for `ggplot`. The new functions
   `scale_color_iwanthue()` and `scale_fill_iwanthue()` generate a 
