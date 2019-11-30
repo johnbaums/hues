@@ -9,17 +9,19 @@ Description: Creating effective colour palettes for figures is
     This is done through k-means clustering of CIE Lab colour space, 
     according to user-selected constraints on hue, chroma, and 
     lightness.
-Date: 2019-11-30
+Date: 2019-12-01
 Depends: R (>= 3.2.0)
 Imports: 
     colorspace,
     methods
 Suggests:
     ggplot2
-Authors@R: as.person(c(
-      "John Baumgartner <johnbaums@gmail.com> [aut, cre]",
-      "Russell Dinnage <r.dinnage@gmail.com> [aut]"
-    )) 
+Authors@R: c(
+    person("John", "Baumgartner", email = "johnbaums@gmail.com",
+      role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8898-0300")),
+    person("Russell", "Dinnage", email = "r.dinnage@gmail.com",
+      role = "aut")
+  )
 URL: https://github.com/johnbaums/hues
 BugReports: https://github.com/johnbaums/hues/issues
 License: LGPL (>= 3)
