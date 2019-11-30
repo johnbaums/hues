@@ -2,15 +2,13 @@
 #' 
 #' Plot named colour swatches for a vector of colours.
 #' 
-#' @param x a vector of colours, specified as: colour names (i.e.
-#' colour names returned by \code{colors()}); numeric indices into 
-#' \code{palette()}, or hexadecimal strings in the form \code{"#RRGGBB"}, where 
-#' \code{RR}, \code{GG}, and \code{BB} are pairs of hexadecimal digits 
-#' representing red, green, and blue components, in the range \code{00} to 
-#' \code{FF}.
-#' @return \code{NULL}. The colour swatch is plotted to the active plotting 
-#'   device.
-#' @seealso \code{\link{iwanthue}}
+#' @param x a vector of colours, specified as: colour names (i.e. colour names
+#'   returned by [colors()]); numeric indices into [palette()], or hexadecimal
+#'   strings in the form `"#RRGGBB"`, where `RR`, `GG`, and `BB` are pairs of
+#'   hexadecimal digits representing red, green, and blue components, in the
+#'   range `00` to `FF`.
+#' @return `NULL`. The colour swatch is plotted to the active plotting device.
+#' @seealso [iwanthue]
 #' @importFrom graphics barplot par strwidth
 #' @export
 #' @examples 

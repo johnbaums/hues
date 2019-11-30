@@ -1,18 +1,17 @@
 #' iwanthue scales to use with ggplot2
 #' 
-#' These functions allow you to use \code{\link{iwanthue}} generated palettes
-#' with \code{ggplot2} plots. You need \code{ggplot2} installed for these to
-#' work. Note these only work with discrete scales.
+#' These functions allow you to use [iwanthue()] generated palettes with
+#' `ggplot2` plots. You need `ggplot2` installed for these to work. Note these
+#' only work with discrete scales.
 #'
-#' @param ... Arguments to pass on to \code{\link[ggplot2]{discrete_scale}}.
+#' @param ... Arguments to pass on to [ggplot2::discrete_scale()].
 #' @param aesthetics Character string or vector of character strings listing the
 #'   name(s) of the aesthetic(s) that this scale works with. This can be useful,
 #'   for example, to apply colour settings to the colour and fill aesthetics at
 #'   the same time, via `aesthetics = c("colour", "fill")`.
 #' @inheritParams iwanthue
 #'
-#' @return A \code{ScaleDiscrete} object that can be added to a \code{ggplot}
-#'   object.
+#' @return A `ScaleDiscrete` object that can be added to a `ggplot` object.
 #' 
 #' @name hues-ggplot2-scales
 #' @rdname hues-ggplot2-scales

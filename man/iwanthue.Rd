@@ -19,45 +19,44 @@ iwanthue(
 \arguments{
 \item{n}{Numeric. The number of colours to generate.}
 
-\item{hmin}{Numeric, in the range [0, 360]. The lower limit of the hue range 
-to be clustered.}
-
-\item{hmax}{Numeric, in the range [0, 360]. The upper limit of the hue range 
-to be clustered.}
-
-\item{cmin}{Numeric, in the range [0, 180]. The lower limit of the chroma 
+\item{hmin}{Numeric, in the range \verb{[0, 360]}. The lower limit of the hue
 range to be clustered.}
 
-\item{cmax}{Numeric, in the range [0, 180]. The upper limit of the chroma 
+\item{hmax}{Numeric, in the range \verb{[0, 360]}. The upper limit of the hue
 range to be clustered.}
 
-\item{lmin}{Numeric, in the range [0, 100]. The lower limit of the luminance 
+\item{cmin}{Numeric, in the range \verb{[0, 180]}. The lower limit of the chroma
 range to be clustered.}
 
-\item{lmax}{Numeric, in the range [0, 100]. The upper limit of the luminance 
+\item{cmax}{Numeric, in the range \verb{[0, 180]}. The upper limit of the chroma
 range to be clustered.}
 
-\item{plot}{Logical. Should the colour swatches be plotted (using 
-\code{\link{swatch}})?}
+\item{lmin}{Numeric, in the range \verb{[0, 100]}. The lower limit of the
+luminance range to be clustered.}
 
-\item{random}{Logical. If \code{TRUE}, clustering will be determined by the 
-existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for 
-clustering, and on exit, the function will restore the pre-existing RNG 
-state.}
+\item{lmax}{Numeric, in the range \verb{[0, 100]}. The upper limit of the
+luminance range to be clustered.}
+
+\item{plot}{Logical. Should the colour swatches be plotted (using
+\code{\link[=swatch]{swatch()}})?}
+
+\item{random}{Logical. If \code{TRUE}, clustering will be determined by the
+existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for clustering,
+and on exit, the function will restore the pre-existing RNG state.}
 }
 \value{
-A vector of \code{n} colours (as hexadecimal strings), representing 
-  centers of clusters determined through k-means clustering of the CIE Lab 
-  colour space delimited by \code{hmin}, \code{hmax}, \code{cmin}, 
-  \code{cmax}, \code{lmin} and \code{lmax}.
+A vector of \code{n} colours (as hexadecimal strings), representing
+centers of clusters determined through k-means clustering of the CIE Lab
+colour space delimited by \code{hmin}, \code{hmax}, \code{cmin}, \code{cmax}, \code{lmin} and
+\code{lmax}.
 }
 \description{
-Generate a palette of distinct colours through k-means clustering of CIE Lab 
+Generate a palette of distinct colours through k-means clustering of CIE Lab
 colour space.
 }
 \details{
-Note that \code{iwanthue} currently doesn't support \code{hmin} 
-  greater than \code{hmax} (which should be allowed, since hue is circular).
+Note that \code{iwanthue} currently doesn't support \code{hmin} greater than
+\code{hmax} (which should be allowed, since hue is circular).
 }
 \examples{
 iwanthue(5)
@@ -71,11 +70,10 @@ iwanthue(3, 220, 260, 12, 150, 0, 53, plot=TRUE) # blue ocean
 }
 \references{
 \itemize{
-  \item Examples follow those presented at \href{http://tools.medialab.sciences-po.fr/iwanthue/}{iwanthue - colors for data scientists}
-  \item \href{https://github.com/medialab/iwanthue}{iwanthue on
-  GitHub}   
+\item Examples follow those presented at \href{http://tools.medialab.sciences-po.fr/iwanthue/}{iwanthue - colors for data scientists}
+\item \href{https://github.com/medialab/iwanthue}{iwanthue on GitHub}
 }
 }
 \seealso{
-\code{\link{swatch}}
+\link{swatch}
 }

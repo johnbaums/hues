@@ -44,44 +44,42 @@ scale_fill_iwanthue(
 )
 }
 \arguments{
-\item{...}{Arguments to pass on to \code{\link[ggplot2]{discrete_scale}}.}
+\item{...}{Arguments to pass on to \code{\link[ggplot2:discrete_scale]{ggplot2::discrete_scale()}}.}
 
-\item{hmin}{Numeric, in the range [0, 360]. The lower limit of the hue range 
-to be clustered.}
-
-\item{hmax}{Numeric, in the range [0, 360]. The upper limit of the hue range 
-to be clustered.}
-
-\item{cmin}{Numeric, in the range [0, 180]. The lower limit of the chroma 
+\item{hmin}{Numeric, in the range \verb{[0, 360]}. The lower limit of the hue
 range to be clustered.}
 
-\item{cmax}{Numeric, in the range [0, 180]. The upper limit of the chroma 
+\item{hmax}{Numeric, in the range \verb{[0, 360]}. The upper limit of the hue
 range to be clustered.}
 
-\item{lmin}{Numeric, in the range [0, 100]. The lower limit of the luminance 
+\item{cmin}{Numeric, in the range \verb{[0, 180]}. The lower limit of the chroma
 range to be clustered.}
 
-\item{lmax}{Numeric, in the range [0, 100]. The upper limit of the luminance 
+\item{cmax}{Numeric, in the range \verb{[0, 180]}. The upper limit of the chroma
 range to be clustered.}
 
-\item{random}{Logical. If \code{TRUE}, clustering will be determined by the 
-existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for 
-clustering, and on exit, the function will restore the pre-existing RNG 
-state.}
+\item{lmin}{Numeric, in the range \verb{[0, 100]}. The lower limit of the
+luminance range to be clustered.}
+
+\item{lmax}{Numeric, in the range \verb{[0, 100]}. The upper limit of the
+luminance range to be clustered.}
+
+\item{random}{Logical. If \code{TRUE}, clustering will be determined by the
+existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for clustering,
+and on exit, the function will restore the pre-existing RNG state.}
 
 \item{aesthetics}{Character string or vector of character strings listing the
 name(s) of the aesthetic(s) that this scale works with. This can be useful,
 for example, to apply colour settings to the colour and fill aesthetics at
-the same time, via `aesthetics = c("colour", "fill")`.}
+the same time, via \code{aesthetics = c("colour", "fill")}.}
 }
 \value{
-A \code{ScaleDiscrete} object that can be added to a \code{ggplot}
-  object.
+A \code{ScaleDiscrete} object that can be added to a \code{ggplot} object.
 }
 \description{
-These functions allow you to use \code{\link{iwanthue}} generated palettes
-with \code{ggplot2} plots. You need \code{ggplot2} installed for these to
-work. Note these only work with discrete scales.
+These functions allow you to use \code{\link[=iwanthue]{iwanthue()}} generated palettes with
+\code{ggplot2} plots. You need \code{ggplot2} installed for these to work. Note these
+only work with discrete scales.
 }
 \examples{
 
@@ -98,5 +96,5 @@ if (require('ggplot2')) {
 }
 }
 \author{
-Russell Dinnage <r.dinnage@gmail.com>
+Russell Dinnage \href{mailto:r.dinnage@gmail.com}{r.dinnage@gmail.com}
 }

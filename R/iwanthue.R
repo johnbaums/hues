@@ -4,37 +4,34 @@
 #' colour space.
 #' 
 #' @param n Numeric. The number of colours to generate.
-#' @param hmin Numeric, in the range [0, 360]. The lower limit of the hue range 
-#'   to be clustered.
-#' @param hmax Numeric, in the range [0, 360]. The upper limit of the hue range 
-#'   to be clustered.
-#' @param cmin Numeric, in the range [0, 180]. The lower limit of the chroma 
+#' @param hmin Numeric, in the range `[0, 360]`. The lower limit of the hue
 #'   range to be clustered.
-#' @param cmax Numeric, in the range [0, 180]. The upper limit of the chroma 
+#' @param hmax Numeric, in the range `[0, 360]`. The upper limit of the hue
 #'   range to be clustered.
-#' @param lmin Numeric, in the range [0, 100]. The lower limit of the luminance 
+#' @param cmin Numeric, in the range `[0, 180]`. The lower limit of the chroma
 #'   range to be clustered.
-#' @param lmax Numeric, in the range [0, 100]. The upper limit of the luminance 
+#' @param cmax Numeric, in the range `[0, 180]`. The upper limit of the chroma 
 #'   range to be clustered.
+#' @param lmin Numeric, in the range `[0, 100]`. The lower limit of the
+#'   luminance range to be clustered.
+#' @param lmax Numeric, in the range `[0, 100]`. The upper limit of the
+#'   luminance range to be clustered.
 #' @param plot Logical. Should the colour swatches be plotted (using 
-#'   \code{\link{swatch}})?
-#' @param random Logical. If \code{TRUE}, clustering will be determined by the 
-#'   existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for 
-#'   clustering, and on exit, the function will restore the pre-existing RNG 
-#'   state.
-#' @return A vector of \code{n} colours (as hexadecimal strings), representing 
+#'   [swatch()])?
+#' @param random Logical. If `TRUE`, clustering will be determined by the 
+#'   existing RNG state. If `FALSE`, the seed will be set to `1` for clustering,
+#'   and on exit, the function will restore the pre-existing RNG state.
+#' @return A vector of `n` colours (as hexadecimal strings), representing 
 #'   centers of clusters determined through k-means clustering of the CIE Lab 
-#'   colour space delimited by \code{hmin}, \code{hmax}, \code{cmin}, 
-#'   \code{cmax}, \code{lmin} and \code{lmax}.
-#' @details Note that \code{iwanthue} currently doesn't support \code{hmin} 
-#'   greater than \code{hmax} (which should be allowed, since hue is circular).
+#'   colour space delimited by `hmin`, `hmax`, `cmin`, `cmax`, `lmin` and 
+#'   `lmax`.
+#' @details Note that `iwanthue` currently doesn't support `hmin` greater than 
+#'   `hmax` (which should be allowed, since hue is circular).
 #' @references 
-#' \itemize{
-#'   \item Examples follow those presented at \href{http://tools.medialab.sciences-po.fr/iwanthue/}{iwanthue - colors for data scientists}
-#'   \item \href{https://github.com/medialab/iwanthue}{iwanthue on
-#'   GitHub}   
-#' }
-#' @seealso \code{\link{swatch}}
+#'   * Examples follow those presented at [iwanthue - colors for data
+#'   scientists](http://tools.medialab.sciences-po.fr/iwanthue/)
+#'   * [iwanthue on GitHub](https://github.com/medialab/iwanthue)
+#' @seealso [swatch]
 #' @export
 #' @importFrom colorspace LAB hex coords
 #' @importFrom stats kmeans
