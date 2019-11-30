@@ -1,4 +1,4 @@
-#' hues: Generate optimally distinct colour paletters
+#' hues: Generate optimally distinct colour palettes
 #' 
 #' This package generates and plot palettes of optimally distinct colours 
 #' in perceptually uniform colour space, based on 
