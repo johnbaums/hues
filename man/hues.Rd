@@ -3,7 +3,6 @@
 \docType{package}
 \name{hues}
 \alias{hues}
-\alias{hues-package}
 \title{hues: Generate optimally distinct colour paletters}
 \description{
 This package generates and plot palettes of optimally distinct colours 

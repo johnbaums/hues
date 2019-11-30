@@ -4,8 +4,17 @@
 \alias{iwanthue}
 \title{Generate a colour palette by k-means clustering of CIE Lab colour space.}
 \usage{
-iwanthue(n, hmin = 0, hmax = 360, cmin = 0, cmax = 180, lmin = 0,
-  lmax = 100, plot = FALSE, random = FALSE)
+iwanthue(
+  n,
+  hmin = 0,
+  hmax = 360,
+  cmin = 0,
+  cmax = 180,
+  lmin = 0,
+  lmax = 100,
+  plot = FALSE,
+  random = FALSE
+)
 }
 \arguments{
 \item{n}{Numeric. The number of colours to generate.}
