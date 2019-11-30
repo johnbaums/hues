@@ -5,7 +5,7 @@
 #' work. Note these only work with discrete scales.
 #'
 #' @param ... Arguments to pass on to \code{\link[ggplot2]{discrete_scale}}.
-#' @param aesthetic Character string or vector of character strings listing the
+#' @param aesthetics Character string or vector of character strings listing the
 #'   name(s) of the aesthetic(s) that this scale works with. This can be useful,
 #'   for example, to apply colour settings to the colour and fill aesthetics at
 #'   the same time, via `aesthetics = c("colour", "fill")`.
