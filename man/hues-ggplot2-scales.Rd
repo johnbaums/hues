@@ -5,7 +5,7 @@
 \alias{scale_colour_iwanthue}
 \alias{scale_color_iwanthue}
 \alias{scale_fill_iwanthue}
-\title{iwanthues Scales to use with ggplot2}
+\title{iwanthue scales to use with ggplot2}
 \usage{
 scale_colour_iwanthue(
   ...,
@@ -44,7 +44,7 @@ scale_fill_iwanthue(
 )
 }
 \arguments{
-\item{...}{Arguments to pass on to \code{\link[ggplot2]{discrete_scale()}}}
+\item{...}{Arguments to pass on to \code{\link[ggplot2]{discrete_scale}}.}
 
 \item{hmin}{Numeric, in the range [0, 360]. The lower limit of the hue range 
 to be clustered.}
@@ -70,11 +70,13 @@ clustering, and on exit, the function will restore the pre-existing RNG
 state.}
 }
 \value{
-A \code{ScaleDiscrete} object that can be added to a \code{ggplot} object
+A \code{ScaleDiscrete} object that can be added to a \code{ggplot}
+  object.
 }
 \description{
-These functions allow you to use \code{\link{iwanthue}} generated palettes with \code{ggplot2} plots.
-You need \code{ggplot2} installed for these to work. Note these only work with discrete scales.
+These functions allow you to use \code{\link{iwanthue}} generated palettes
+with \code{ggplot2} plots. You need \code{ggplot2} installed for these to
+work. Note these only work with discrete scales.
 }
 \examples{
 
@@ -89,4 +91,7 @@ if (require('ggplot2')) {
      scale_colour_iwanthue(hmax = 90)
      
 }
+}
+\author{
+Russell Dinnage <r.dinnage@gmail.com>
 }

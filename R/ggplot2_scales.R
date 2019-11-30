@@ -1,17 +1,20 @@
-#' iwanthues Scales to use with ggplot2
+#' iwanthue scales to use with ggplot2
 #' 
-#' These functions allow you to use \code{\link{iwanthue}} generated palettes with \code{ggplot2} plots.
-#' You need \code{ggplot2} installed for these to work. Note these only work with discrete scales.
+#' These functions allow you to use \code{\link{iwanthue}} generated palettes
+#' with \code{ggplot2} plots. You need \code{ggplot2} installed for these to
+#' work. Note these only work with discrete scales.
 #'
-#' @param ... Arguments to pass on to \code{\link[ggplot2]{discrete_scale()}}
+#' @param ... Arguments to pass on to \code{\link[ggplot2]{discrete_scale}}.
 #' 
 #' @inheritParams iwanthue
 #'
-#' @return A \code{ScaleDiscrete} object that can be added to a \code{ggplot} object
+#' @return A \code{ScaleDiscrete} object that can be added to a \code{ggplot}
+#'   object.
 #' 
 #' @name hues-ggplot2-scales
 #' @rdname hues-ggplot2-scales
 #' 
+#' @author Russell Dinnage <r.dinnage@@gmail.com>
 #' @export
 #'
 #' @examples
@@ -27,7 +30,8 @@
 #'      scale_colour_iwanthue(hmax = 90)
 #'      
 #' }
-scale_colour_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, lmin=0, lmax=100, random=FALSE,
+scale_colour_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, 
+                                  lmin=0, lmax=100, random=FALSE,
                                   aesthetics = "colour") {
   
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
@@ -36,7 +40,8 @@ scale_colour_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, lmin=
   
   ggplot2::discrete_scale(aesthetics,
                           "iwanthue",
-                          iwanthue_discrete(hmin, hmax, cmin, cmax, lmin, lmax, random),
+                          iwanthue_discrete(hmin, hmax, cmin, cmax, lmin, lmax, 
+                                            random),
                           ...)
 }
 
@@ -48,8 +53,8 @@ scale_color_iwanthue <- scale_colour_iwanthue
 #' @rdname hues-ggplot2-scales
 #' @export
 #' 
-scale_fill_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, lmin=0, lmax=100, random=FALSE,
-                                  aesthetics = "fill") {
+scale_fill_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, lmin=0, 
+                                lmax=100, random=FALSE, aesthetics = "fill") {
   
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop('ggplot2 is required for this functionality', call. = FALSE)
@@ -57,7 +62,8 @@ scale_fill_iwanthue <- function(..., hmin=0, hmax=360, cmin=0, cmax=180, lmin=0,
   
   ggplot2::discrete_scale(aesthetics,
                           "iwanthue",
-                          iwanthue_discrete(hmin, hmax, cmin, cmax, lmin, lmax, random),
+                          iwanthue_discrete(hmin, hmax, cmin, cmax, lmin, lmax, 
+                                            random),
                           ...)
 }
 

@@ -1,6 +1,6 @@
 Package: hues
 Type: Package
-Version: 0.1.0.9000
+Version: 0.2.0.9000
 Title: Distinct Colours Palettes Based on 'iwanthue'
 Description: Creating effective colour palettes for figures is 
     challenging. This package generates and plot palettes of optimally 
@@ -9,14 +9,16 @@ Description: Creating effective colour palettes for figures is
     This is done through k-means clustering of CIE Lab colour space, 
     according to user-selected constraints on hue, chroma, and 
     lightness.
-Date: 2017-11-01
+Date: 2019-11-30
 Depends: R (>= 3.2.0)
 Imports: 
     colorspace,
     methods,
     ggplot2
-Authors@R: person("John", "Baumgartner", email = "johnbaums@gmail.com",
-                  role = c("aut", "cre"))
+Authors@R: as.person(c(
+      "John Baumgartner <johnbaums@gmail.com> [aut, cre]",
+      "Russell Dinnage <r.dinnage@gmail.com> [aut]"
+    )) 
 URL: https://github.com/johnbaums/hues
 BugReports: https://github.com/johnbaums/hues/issues
 License: LGPL (>= 3)
