@@ -13,7 +13,8 @@ Date: 2019-11-30
 Depends: R (>= 3.2.0)
 Imports: 
     colorspace,
-    methods,
+    methods
+Suggests:
     ggplot2
 Authors@R: as.person(c(
       "John Baumgartner <johnbaums@gmail.com> [aut, cre]",
