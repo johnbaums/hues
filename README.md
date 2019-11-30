@@ -27,7 +27,7 @@ install.packages('hues')
 
 The development version of `hues` can be installed using
 `install_github` from the
-[`devtools`](https://cran.r-project.org/web/packages/devtools/index.html)
+[`devtools`](https://cran.r-project.org/package=devtools)
 package:
 
 ``` r
