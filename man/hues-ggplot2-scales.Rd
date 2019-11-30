@@ -68,6 +68,11 @@ range to be clustered.}
 existing RNG state. If \code{FALSE}, the seed will be set to \code{1} for 
 clustering, and on exit, the function will restore the pre-existing RNG 
 state.}
+
+\item{aesthetic}{Character string or vector of character strings listing the
+name(s) of the aesthetic(s) that this scale works with. This can be useful,
+for example, to apply colour settings to the colour and fill aesthetics at
+the same time, via `aesthetics = c("colour", "fill")`.}
 }
 \value{
 A \code{ScaleDiscrete} object that can be added to a \code{ggplot}
