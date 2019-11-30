@@ -1,6 +1,6 @@
 Package: hues
 Type: Package
-Version: 0.2.0.9000
+Version: 0.2.0
 Title: Distinct Colour Palettes Based on 'iwanthue'
 Description: Creating effective colour palettes for figures is 
     challenging. This package generates and plot palettes of optimally 
