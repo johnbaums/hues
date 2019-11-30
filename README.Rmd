@@ -22,6 +22,9 @@ knitr::opts_chunk$set(
 
 This package generates and plot palettes of optimally distinct colours in perceptually uniform colour space, based on [iwanthue](http://tools.medialab.sciences-po.fr/iwanthue/). This is done through k-means clustering of CIE Lab colour space, according to user-selected constraints on hue, chroma, and lightness.
 
+`iwanthue` palettes can be added directly onto [ggplot2](https://github.com/tidyverse/ggplot2) objects via the function `scale_colour_iwanthue`.
+
+
 ### Installation
 
 The current CRAN version of `hues` can be installed with:
@@ -41,7 +44,7 @@ devtools::install_github('johnbaums/hues')
 
 The examples below show palettes corresponding to some presets given at the [iwanthue](http://tools.medialab.sciences-po.fr/iwanthue) website.
 
-```{r ex, dev='CairoPNG', results='hide', fig.width=3}
+```{r ex, results='hide', fig.width=3}
 library(hues)
 iwanthue(5, plot=TRUE)
 iwanthue(5, 0, 240, 0, 24, 0, 100, plot=TRUE)    # shades
@@ -51,3 +54,20 @@ iwanthue(5, 0, 360, 36, 180, 13, 73, plot=TRUE)  # intense
 iwanthue(3, 0, 300, 60, 180, 73, 100, plot=TRUE) # fluoro
 iwanthue(3, 220, 260, 12, 150, 0, 53, plot=TRUE) # blue ocean
 ```
+
+
+### `ggplot2` integration
+
+```{r ex2, results='hide', fig.width=6}
+library(ggplot2)
+ggplot(iris, aes(x=Petal.Width, y=Petal.Length)) +
+  geom_point(aes(color=Species), size=3) + 
+  scale_colour_iwanthue()
+ggplot(iris, aes(x=Petal.Width, y=Petal.Length)) +
+  geom_point(aes(color=Species), size=3) + 
+  scale_colour_iwanthue(hmax = 90)
+ggplot(iris, aes(x=Petal.Width, y=Petal.Length)) +
+  geom_point(aes(color=Species), size=3) + 
+  scale_colour_iwanthue(hmin=0, hmax=300, cmin=60, cmax=180, lmin=73, lmax=100)
+```
+
