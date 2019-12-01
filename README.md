@@ -14,8 +14,8 @@ through k-means clustering of CIE Lab colour space, according to
 user-selected constraints on hue, chroma, and lightness.
 
 `iwanthue` palettes can be added directly onto
-[ggplot2](https://github.com/tidyverse/ggplot2) objects via the function
-`scale_colour_iwanthue`.
+[ggplot2](https://github.com/tidyverse/ggplot2) objects via the
+functions `scale_colour_iwanthue()` and `scale_fill_iwanthue()`.
 
 ### Installation
 
@@ -27,8 +27,7 @@ install.packages('hues')
 
 The development version of `hues` can be installed using
 `install_github` from the
-[`devtools`](https://cran.r-project.org/package=devtools)
-package:
+[`devtools`](https://cran.r-project.org/package=devtools) package:
 
 ``` r
 # install.packages('devtools') # uncomment if devtools isn't already installed
